@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Image Gallery</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>My Gallery</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#categories">Categories</a>
+      <a href="#search">Search</a>
+    </nav>
+  </header>
+
+  <section id="home" class="gallery">
+    <h2>Image Gallery</h2>
+    <div id="imageContainer" class="grid">
+      <!-- Images will be inserted by JS -->
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About This Project</h2>
+    <p>This is a simple image gallery website made without any CSS framework. It includes basic search and category
+      filters.</p>
+  </section>
+
+  <section id="categories">
+    <h2>Categories</h2>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('tech')">Tech</button>
+    <button onclick="filterImages('animal')">Animals</button>
+    <button onclick="filterImages('all')">Show All</button>
+  </section>
+
+  <section id="search">
+    <h2>Search</h2>
+    <input type="text" id="searchInput" placeholder="Search by tag..." onkeyup="searchImages()" />
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Gallery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
